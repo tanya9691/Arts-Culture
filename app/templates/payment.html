@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ArtGrih</title><!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ArtGrih</title>
+
+      <meta name="keywords" content="Toys Shop Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+         Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+      <script>
+         addEventListener("load", function () {
+         	setTimeout(hideURLbar, 0);
+         }, false);
+
+         function hideURLbar() {
+         	window.scrollTo(0, 1);
+         }
+      </script>
+      <!--//meta tags ends here-->
+      <!--booststrap-->
+      <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+      <!--//booststrap end-->
+      <!-- font-awesome icons -->
+      <link href="static/css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
+      <!-- //font-awesome icons -->
+      <!--Shoping cart-->
+      <link rel="stylesheet" href="static/css/shop.css" type="text/css" />
+      <!--//Shoping cart-->
+      <!--checkout-->
+      <link rel="stylesheet" type="text/css" href="static/css/checkout.css">
+      <!--//checkout-->
+      <link href="static/css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
+      <!--stylesheets-->
+      <link href="static/css/style.css" rel='stylesheet' type='text/css' media="all">
+      <!--//stylesheets-->
+      <link href="//fonts.googleapis.com/css?family=Sunflower:500,700" rel="stylesheet">
+      <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="static/css/style-starter.css">
+  <!-- Template CSS -->
+  <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900&display=swap" rel="stylesheet">
+  <!-- Template CSS -->
+
+</head>
+
+<body>
+  <section class="w3l-banner-slider-main inner-pagehny">
+    <div class="breadcrumb-infhny">
+
+      <div class="top-header-content">
+
+        <header class="tophny-header">
+          <div class="container-fluid">
+            <div class="top-right-strip row">
+              <!--/left-->
+              <div class="top-hny-left-content col-lg-6 pl-lg-0">
+                <h6>Upto 30% off on All styles , <a href="#" target="_blank"> Click here for <span
+                      class="fa fa-hand-o-right hand-icon" aria-hidden="true"></span> <span class="hignlaite">More
+                      details</span></a></h6>
+              </div>
+              <!--//left-->
+              <!--/right-->
+              <ul class="top-hnt-right-content col-lg-6">
+
+                <li class="button-log usernhy">
+                  <a class="btn-open" href="#">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                  </a>
+                </li>
+                <li class="transmitvcart galssescart2 cart cart box_1">
+                  <form action="#" method="post" class="last">
+                    <input type="hidden" name="cmd" value="_cart">
+                    <input type="hidden" name="display" value="1">
+                    <button class="top_transmitv_cart" type="submit" name="submit" value="">
+                      My Cart
+                      <span class="fa fa-shopping-cart"></span>
+                    </button>
+                  </form>
+                </li>
+              </ul>
+              <!--//right-->
+              <div class="overlay-login text-left">
+                <button type="button" class="overlay-close1">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <div class="wrap">
+                  <h5 class="text-center mb-4">Login Now</h5>
+                  <div class="login-bghny p-md-5 p-4 mx-auto mw-100">
+                    <!--/login-form-->
+                    <form action="#" method="post">
+                      <div class="form-group">
+                        <p class="login-texthny mb-2">Email address</p>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                          placeholder="" required="">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email
+                          with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <p class="login-texthny mb-2">Password</p>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder=""
+                          required="">
+                      </div>
+                      <div class="form-check mb-2">
+                        <div class="userhny-check">
+                          <label class="check-remember container">
+                            <input type="checkbox" class="form-check"> <span class="checkmark"></span>
+                            <p class="privacy-policy">Remember me</p>
+                          </label>
+                          <div class="clearfix"></div>
+                        </div>
+                      </div>
+                      <button type="submit" class="submit-login btn mb-4">Sign In</button>
+
+                    </form>
+                    <!--//login-form-->
+                  </div>
+                  <!---->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/nav-->
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid serarc-fluid">
+              <a class="navbar-brand" href="{% url 'index' %}">
+                Art<span class="lohny">G</span>rih</a>
+              <!-- if logo is image enable this
+                    <a class="navbar-brand" href="#index.html">
+                      <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+                    </a> -->
+              <!--/search-right-->
+              <div class="search-right">
+
+                <a href="#search" title="search"><span class="fa fa-search mr-2" aria-hidden="true"></span>
+                  <span class="search-text">Search here</span></a>
+                <!-- search popup -->
+
+
+                <div id="search" class="pop-overlay">
+                  <div class="popup">
+
+                    <form action="#" method="post" class="search-box">
+                      <input type="search" placeholder="Keyword" name="search" required="required" autofocus="">
+                      <button type="submit" class="btn">Search</button>
+                    </form>
+
+                  </div>
+
+                  <a class="close" href="#">×</a>
+                </div>
+                <!-- /search popup -->
+              </div>
+              <!--//search-right-->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fa fa-bars"> </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Home</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">What We Offer</a>
+                  </li>
+
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </nav>
+          <!--//nav-->
+        </header>
+
+  </section>
+
+
+
+  <section class="w3l-specification-6">
+    <!-- /specification-6-->
+
+
+
+
+      <section class="checkout py-lg-4 py-md-3 py-sm-3 py-3">
+         <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+            <div class="ads-grid_shop">
+               <div class="shop_inner_inf">
+                  <div class="privacy about">
+                     <h3>Pay<span></span></h3>
+                     <!--/tabs-->
+                     <div class="responsive_tabs">
+                        <div id="horizontalTab">
+                           <ul class="resp-tabs-list">
+                              <li>Cash on delivery (COD)</li>
+                              <li>Credit/Debit</li>
+                              <li>Net Banking</li>
+                              <li>Paypal Account</li>
+                           </ul>
+                           <div class="resp-tabs-container">
+                              <!--/tab_one-->
+                              <div class="tab1">
+                                 <div class="pay_info">
+                                    <div class="vertical_post check_box_agile">
+                                       <h5>COD</h5>
+                                       <div class="checkbox">
+                                          <div class="check_box_one cashon_delivery">
+                                             <label class="anim">
+                                             <input type="checkbox" class="checkbox">
+                                             <span> We also accept Credit/Debit card on delivery. Please Check with the agent.</span>
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!--//tab_one-->
+                              <div class="tab2">
+                                 <div class="pay_info">
+                                    <form action="#" method="post" class="creditly-card-form agileinfo_form">
+                                       <section class="creditly-wrapper wthree, w3_agileits_wrapper">
+                                          <div class="credit-card-wrapper">
+                                             <div class="first-row form-group">
+                                                <div class="controls">
+                                                   <label class="control-label">Name on Card</label>
+                                                   <input class="billing-address-name form-control" type="text" name="name" placeholder="John Smith">
+                                                </div>
+                                                <div class="w3_agileits_card_number_grids">
+                                                   <div class="w3_agileits_card_number_grid_left">
+                                                      <div class="controls">
+                                                         <label class="control-label">Card Number</label>
+                                                         <input class="number credit-card-number form-control" type="text" name="number" inputmode="numeric" autocomplete="cc-number"
+                                                            autocompletetype="cc-number" x-autocompletetype="cc-number" placeholder="&#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149;">
+                                                      </div>
+                                                   </div>
+                                                   <div class="w3_agileits_card_number_grid_right">
+                                                      <div class="controls">
+                                                         <label class="control-label">CVV</label>
+                                                         <input class="security-code form-control" Â· inputmode="numeric" type="text" name="security-code" placeholder="&#149;&#149;&#149;">
+                                                      </div>
+                                                   </div>
+                                                   <div class="clear"> </div>
+                                                </div>
+                                                <div class="controls">
+                                                   <label class="control-label">Expiration Date</label>
+                                                   <input class="expiration-month-and-year form-control" type="text" name="expiration-month-and-year" placeholder="MM / YY">
+                                                </div>
+                                             </div>
+                                             <button class="submit"><span>Make a payment </span></button>
+                                          </div>
+                                       </section>
+                                    </form>
+                                 </div>
+                              </div>
+                              <div class="tab3">
+                                 <div class="pay_info">
+                                    <div class="vertical_post">
+                                       <form action="#" method="post">
+                                          <h5>Select From Popular Banks</h5>
+                                          <div class="swit-radio">
+                                             <div class="check_box_one">
+                                                <div class="radio_one"> <label><input type="radio" name="radio" checked=""><i></i>Syndicate Bank</label> </div>
+                                             </div>
+                                             <div class="check_box_one">
+                                                <div class="radio_one"> <label><input type="radio" name="radio"><i></i>Bank of Baroda</label> </div>
+                                             </div>
+                                             <div class="check_box_one">
+                                                <div class="radio_one"> <label><input type="radio" name="radio"><i></i>Canara Bank</label> </div>
+                                             </div>
+                                             <div class="check_box_one">
+                                                <div class="radio_one"> <label><input type="radio" name="radio"><i></i>ICICI Bank</label> </div>
+                                             </div>
+                                             <div class="check_box_one">
+                                                <div class="radio_one"> <label><input type="radio" name="radio"><i></i>State Bank Of India</label> </div>
+                                             </div>
+                                             <div class="clearfix"></div>
+                                          </div>
+                                          <h5>Or SELECT OTHER BANK</h5>
+                                          <div class="section_room_pay">
+                                             <select class="year">
+                                                <option value="">=== Other Banks ===</option>
+                                                <option value="ALB-NA">Allahabad Bank NetBanking</option>
+                                                <option value="ADB-NA">Andhra Bank</option>
+                                                <option value="BBK-NA">Bank of Bahrain and Kuwait NetBanking</option>
+                                                <option value="BBC-NA">Bank of Baroda Corporate NetBanking</option>
+                                                <option value="BBR-NA">Bank of Baroda Retail NetBanking</option>
+                                                <option value="BOI-NA">Bank of India NetBanking</option>
+                                                <option value="BOM-NA">Bank of Maharashtra NetBanking</option>
+                                                <option value="CSB-NA">Catholic Syrian Bank NetBanking</option>
+                                                <option value="CBI-NA">Central Bank of India</option>
+                                                <option value="CUB-NA">City Union Bank NetBanking</option>
+                                                <option value="CRP-NA">Corporation Bank</option>
+                                                <option value="DBK-NA">Deutsche Bank NetBanking</option>
+                                                <option value="DCB-NA">Development Credit Bank</option>
+                                                <option value="DC2-NA">Development Credit Bank - Corporate</option>
+                                                <option value="DLB-NA">Dhanlaxmi Bank NetBanking</option>
+                                                <option value="FBK-NA">Federal Bank NetBanking</option>
+                                                <option value="IDS-NA">Indusind Bank NetBanking</option>
+                                                <option value="IOB-NA">Indian Overseas Bank</option>
+                                                <option value="ING-NA">ING Vysya Bank (now Kotak)</option>
+                                                <option value="JKB-NA">Jammu and Kashmir NetBanking</option>
+                                                <option value="JSB-NA">Janata Sahakari Bank Limited</option>
+                                                <option value="KBL-NA">Karnataka Bank NetBanking</option>
+                                                <option value="KVB-NA">Karur Vysya Bank NetBanking</option>
+                                                <option value="LVR-NA">Lakshmi Vilas Bank NetBanking</option>
+                                                <option value="OBC-NA">Oriental Bank of Commerce NetBanking</option>
+                                                <option value="CPN-NA">PNB Corporate NetBanking</option>
+                                                <option value="PNB-NA">PNB NetBanking</option>
+                                                <option value="RSD-DIRECT">Rajasthan State Co-operative Bank-Debit Card</option>
+                                                <option value="RBS-NA">RBS (The Royal Bank of Scotland)</option>
+                                                <option value="SWB-NA">Saraswat Bank NetBanking</option>
+                                                <option value="SBJ-NA">SB Bikaner and Jaipur NetBanking</option>
+                                                <option value="SBH-NA">SB Hyderabad NetBanking</option>
+                                                <option value="SBM-NA">SB Mysore NetBanking</option>
+                                                <option value="SBT-NA">SB Travancore NetBanking</option>
+                                                <option value="SVC-NA">Shamrao Vitthal Co-operative Bank</option>
+                                                <option value="SIB-NA">South Indian Bank NetBanking</option>
+                                                <option value="SBP-NA">State Bank of Patiala NetBanking</option>
+                                                <option value="SYD-NA">Syndicate Bank NetBanking</option>
+                                                <option value="TNC-NA">Tamil Nadu State Co-operative Bank NetBanking</option>
+                                                <option value="UCO-NA">UCO Bank NetBanking</option>
+                                                <option value="UBI-NA">Union Bank NetBanking</option>
+                                                <option value="UNI-NA">United Bank of India NetBanking</option>
+                                                <option value="VJB-NA">Vijaya Bank NetBanking</option>
+                                             </select>
+                                          </div>
+                                          <input type="submit" value="PAY NOW">
+                                       </form>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="tab4">
+                                 <div class="row pay_info">
+                                    <div class="col-md-6 tab-grid">
+                                       <img class="pp-img" src="static/images/paypal.png" alt="Image Alternative text" title="Image Title">
+                                       <p>Important: You will be redirected to PayPal's website to securely complete your payment.</p>
+                                       <a class="btn btn-primary">Checkout via Paypal</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <form class="cc-form">
+                                          <div class="clearfix">
+                                             <div class="form-group form-group-cc-number">
+                                                <label>Card Number</label>
+                                                <input class="form-control" placeholder="xxxx xxxx xxxx xxxx" type="text"><span class="cc-card-icon"></span>
+                                             </div>
+                                             <div class="form-group form-group-cc-cvc">
+                                                <label>CVV</label>
+                                                <input class="form-control" placeholder="xxxx" type="text">
+                                             </div>
+                                          </div>
+                                          <div class="clearfix">
+                                             <div class="form-group form-group-cc-name">
+                                                <label>Card Holder Name</label>
+                                                <input class="form-control" type="text">
+                                             </div>
+                                             <div class="form-group form-group-cc-date">
+                                                <label>Valid Thru</label>
+                                                <input class="form-control" placeholder="mm/yy" type="text">
+                                             </div>
+                                          </div>
+                                          <div class="checkbox checkbox-small">
+                                             <label>
+                                             <input class="i-check" type="checkbox" checked="">Add to My Cards</label>
+                                          </div>
+                                          <input class="btn btn-primary submit" type="submit" value="Proceed Payment">
+                                       </form>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--//tabs-->
+                  </div>
+               </div>
+               <!-- //payment -->
+               <div class="clearfix"></div>
+            </div>
+         </div>
+      </section>
+      <!--subscribe-address-->
+      <section class="subscribe">
+         <div class="container-fluid">
+         <div class="row">
+            <div class="col-lg-6 col-md-6 map-info-right px-0">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3150859.767904157!2d-96.62081048651531!3d39.536794757966845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1408111832978"> </iframe>
+            </div>
+            <div class="col-lg-6 col-md-6 address-w3l-right text-center">
+               <div class="address-gried ">
+                  <span class="far fa-map"></span>
+                  <p>25478 Road St.121<br>USA New Hill
+                  <p>
+               </div>
+               <div class="address-gried mt-3">
+                  <span class="fas fa-phone-volume"></span>
+                  <p> +(000)123 4565<br>+(010)123 4565</p>
+               </div>
+               <div class=" address-gried mt-3">
+                  <span class="far fa-envelope"></span>
+                  <p><a href="mailto:info@example.com">info@example1.com</a>
+                     <br><a href="mailto:info@example.com">info@example2.com</a>
+                  </p>
+               </div>
+            </div>
+         </div>
+		 </div>
+      </section>
+      <!--//subscribe-address-->
+
+        
+
+
+
+
+
+
+
+  <!-- //specification-6-->
+
+  <section class="w3l-ecommerce-main">
+    <!-- /products-->
+
+  </section>
+  <!-- //products-->
+
+
+  <section class="w3l-footer-22">
+    <!-- footer-22 -->
+    <div class="footer-hny py-5">
+      <div class="container py-lg-5">
+        <div class="text-txt row">
+          <div class="left-side col-lg-4">
+            <h3><a class="logo-footer" href="{% url 'index' %}">
+                Art<span class="lohny">G</span>rih</a></h3>
+            <!-- if logo is image enable this
+                                <a class="navbar-brand" href="#index.html">
+                                    <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+                                </a> -->
+            <p>Chhatisgarh Arts Store offers unique gift ideas , accessories, Décor, Statues, Sculptures, Paintings,
+              Wind chimes Ethnic wall clocks & unique handmade arts & crafts on your doorstep</p>
+            <ul class="social-footerhny mt-lg-5 mt-4">
+
+              <li><a class="facebook" href="#"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+              </li>
+              <li><a class="twitter" href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+              </li>
+              <li><a class="google" href="#"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
+              </li>
+              <li><a class="instagram" href="#"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="right-side col-lg-8 pl-lg-5">
+            <h4>Special Offer All
+              Products at Flat 10% Discount</h4>
+            <div class="sub-columns">
+              <div class="sub-one-left">
+                <h6>Useful Links</h6>
+                <div class="footer-hny-ul">
+                  <ul>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                  </ul>
+                </div>
+
+              </div>
+              <div class="sub-two-right">
+                <h6>Our Store</h6>
+                <p class="mb-5">Pandri Road, City Centre Mall, Raipur, Chhattisgarh 492001</p>
+
+                <h6>We accept:</h6>
+                <ul>
+                  <li><a class="pay-method" href="#"><span class="fa fa-cc-visa" aria-hidden="true"></span></a>
+                  </li>
+                  <li><a class="pay-method" href="#"><span class="fa fa-cc-mastercard" aria-hidden="true"></span></a>
+                  </li>
+                  <li><a class="pay-method" href="#"><span class="fa fa-cc-paypal" aria-hidden="true"></span></a>
+                  </li>
+                  <li><a class="pay-method" href="#"><span class="fa fa-cc-amex" aria-hidden="true"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="below-section row">
+          <div class="columns col-lg-6">
+            <ul class="jst-link">
+              <li><a href="#">Privacy Policy </a> </li>
+              <li><a href="#">Term of Service</a></li>
+              <li><a href="contact.html">Customer Care</a> </li>
+            </ul>
+          </div>
+          <div class="columns col-lg-6 text-lg-right">
+
+          </div>
+          <button onclick="topFunction()" id="movetop" title="Go to top">
+            <span class="fa fa-angle-double-up"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- //titels-5 -->
+    <!-- move top -->
+
+
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- /move top -->
+  </section>
+
+
+</body>
+
+</html>
+
+<script src="static/js/jquery-3.3.1.min.js"></script>
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+<script src="static/js/jquery-2.1.4.min.js"></script>
+<!--/login-->
+<script>
+  $(document).ready(function () {
+    $(".button-log a").click(function () {
+      $(".overlay-login").fadeToggle(200);
+      $(this).toggleClass('btn-open').toggleClass('btn-close');
+    });
+  });
+  $('.overlay-close1').on('click', function () {
+    $(".overlay-login").fadeToggle(200);
+    $(".button-log a").toggleClass('btn-open').toggleClass('btn-close');
+    open = false;
+  });
+</script>
+<!--//login-->
+<!-- //jQuery-Photo-filter-lightbox-portfolio-plugin -->
+<script src="static/js/bootstrap.min.js"></script></title>
+<!-- //Modal 1-->
+      <!--js working-->
+      <script src='static/js/jquery-2.2.3.min.js'></script>
+      <!--//js working-->
+      <!-- cart-js -->
+      <script src="static/js/minicart.js"></script>
+      <script>
+         toys.render();
+
+         toys.cart.on('toys_checkout', function (evt) {
+         	var items, len, i;
+
+         	if (this.subtotal() > 0) {
+         		items = this.items();
+
+         		for (i = 0, len = items.length; i < len; i++) {}
+         	}
+         });
+      </script>
+      <!--// cart-js -->
+      <!-- easy-responsive-tabs -->
+      <script src="static/js/easy-responsive-tabs.js"></script>
+      <script>
+         $(document).ready(function () {
+         	$('#horizontalTab').easyResponsiveTabs({
+         		type: 'default', //Types: default, vertical, accordion
+         		width: 'auto', //auto or any width like 600px
+         		fit: true, // 100% fit in a container
+         		closed: 'accordion', // Start closed if in accordion view
+         		activate: function (event) { // Callback function if tab is switched
+         			var $tab = $(this);
+         			var $info = $('#tabInfo');
+         			var $name = $('span', $info);
+         			$name.text($tab.text());
+         			$info.show();
+         		}
+         	});
+         	$('#verticalTab').easyResponsiveTabs({
+         		type: 'vertical',
+         		width: 'auto',
+         		fit: true
+         	});
+         });
+      </script>
+      <!-- credit-card -->
+      <script src="static/js/creditly.js"></script>
+      <link rel="stylesheet" href="static/css/creditly.css" type="text/css" media="all" />
+      <script>
+         $(function () {
+         	var creditly = Creditly.initialize(
+         		'.creditly-wrapper .expiration-month-and-year',
+         		'.creditly-wrapper .credit-card-number',
+         		'.creditly-wrapper .security-code',
+         		'.creditly-wrapper .card-type');
+
+         	$(".creditly-card-form .submit").click(function (e) {
+         		e.preventDefault();
+         		var output = creditly.validate();
+         		if (output) {
+         			// Your validated credit card output
+         			console.log(output);
+         		}
+         	});
+         });
+      </script>
+      <!-- //credit-card -->
+      <!-- start-smoth-scrolling -->
+      <script src="static/js/move-top.js"></script>
+      <script src="static/js/easing.js"></script>
+      <script>
+         jQuery(document).ready(function ($) {
+         	$(".scroll").click(function (event) {
+         		event.preventDefault();
+         		$('html,body').animate({
+         			scrollTop: $(this.hash).offset().top
+         		}, 900);
+         	});
+         });
+      </script>
+      <!-- start-smoth-scrolling -->
+      <!-- here stars scrolling icon -->
+      <script>
+         $(document).ready(function () {
+
+         	var defaults = {
+         		containerID: 'toTop', // fading element id
+         		containerHoverID: 'toTopHover', // fading element hover id
+         		scrollSpeed: 1200,
+         		easingType: 'linear'
+         	};
+         	$().UItoTop({
+         		easingType: 'easeOutQuart'
+         	});
+
+         });
+      </script>
+      <!-- //here ends scrolling icon -->
+      <!--bootstrap working-->
+      <script src="static/js/bootstrap.min.js"></script>
+      <!-- //bootstrap working-->
+
+</head>
+<body>
+
+</body>
+</html>
