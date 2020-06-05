@@ -1,90 +1,49 @@
-from django.http import JsonResponse
-from django.shortcuts import render
-from django.contrib.auth import login, authenticate
-from django.shortcuts import render, redirect
-from django.contrib.auth.models import User
-from django.views.generic import ListView, DetailView, View
-from .models import Item
-from rest_framework import generics
-from rest_framework.response import Response
-from rest_framework.status import HTTP_200_OK, HTTP_400_BAD_REQUEST
-from .serializers import UserSerializer, UserLoginSerializer, UserLogoutSerializer
-
-import json
+from django.db import models
+from django.shortcuts import reverse
 
 
-def demo(request):
-    return render(request, "demo.html")
+class User(models.Model):
+    username = models.CharField(max_length=255, null=False)
+    email = models.EmailField(max_length=255, null=False)
+    password = models.CharField(max_length=50)
+    GENDER_CHOICES = (
+        ('M', 'Male'),
+        ('F', 'Female'),
+    )
 
-def index(request):
-    return render(request, "index.html")
+    gender = models.CharField(max_length=1, choices=GENDER_CHOICES,)
+    hobby = models.CharField(max_length=255, default="",)
+    ifLogged = models.BooleanField(default=False)
+    token = models.CharField(max_length=500, null=True, default="")
 
-def about(request):
-    return render(request, "about.html")
-
-def contact(request):
-    return render(request, "contact.html")
-
-def item(request):
-    return render(request, "item.html")
-
-def payment(request):
-    return render(request, "payment.html")
-
-class ItemList(ListView):
-    Model = Item
-    template_name = "item.html"
-    def get_queryset(self):
-        item =  Item.objects.all()
-        return item
-
-class RegisterationView(generics.ListCreateAPIView):
-    # get method handler
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
-
-class LoginView(generics.GenericAPIView):
-    # get method handler
-    queryset = User.objects.all()
-    serializer_class = UserLoginSerializer
-
-    def post(self, request, *args, **kwargs):
-        serializer_class = UserLoginSerializer(data=request.data)
-        if serializer_class.is_valid(raise_exception=True):
-            return Response(serializer_class.data, status=HTTP_200_OK)
-        return Response(serializer_class.errors, status=HTTP_400_BAD_REQUEST)
+    def __str__(self):
+        return "{} -{}".format(self.username, self.email)
 
 
-class LogoutView(generics.GenericAPIView):
-    queryset = User.objects.all()
-    serializer_class = UserLogoutSerializer
+class Item(models.Model):
+    I_id = models.IntegerField( null = False)
+    title = models.CharField(max_length=225,null = False)
+    description = models.CharField(max_length=  1000, null=False)
+    discount_price = models.FloatField(blank=True, null=True)
+    price = models.FloatField(null=False)
+    image = models.ImageField(upload_to='images')
+    is_active = models.BooleanField(default=True)
 
-    def post(self, request, *args, **kwargs):
-        serializer_class = UserLogoutSerializer(data=request.data)
-        if serializer_class.is_valid(raise_exception=True):
-            return Response(serializer_class.data, status=HTTP_200_OK)
-        return Response(serializer_class.errors, status=HTTP_400_BAD_REQUEST)
+    def __str__(self):
+        return self.title
 
 
 
+    def get_add_to_cart_url(self):
+        return reverse("core:add-to-cart", kwargs={
+            'slug': self.slug
+        })
 
-# with open("app/products.json") as file:
-#     data = json.load(file)
-#
-#
-#     def products(request):
-#         try:
-#             products = data['products']
-#         except KeyError:
-#             return None
-#         p_id= 1
-#
-#         for product in products:
-#             Name = product.get('name')
-#
-#         result = {'status': 1, 'message': Name}
-#         return JsonResponse(result, safe=False)
-#
+    def get_remove_from_cart_url(self):
+        return reverse("core:remove-from-cart", kwargs={
+            'slug': self.slug
+        })
+
 
 
 
