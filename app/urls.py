@@ -1,14 +1,15 @@
 from django.conf.urls import url
 from . import views
-from .views import ItemList,RegisterationView,LoginView,LogoutView
+from .views import ItemList #,RegisterationView,LoginView,LogoutView
 
 urlpatterns = [
     url('^$', views.index, name = 'index'),
-    url('addUser/', RegisterationView.as_view(), name="register"),
-    url('login/', LoginView.as_view(), name="login"),
-    url('logout/', LogoutView.as_view(), name="logout"),
+url('^in$', views.index1, name = 'index1'),
+    # url('addUser/', RegisterationView.as_view(), name="register"),
+    # url('login/', LoginView.as_view(), name="login"),
+    # url('logout/', LogoutView.as_view(), name="logout"),
     url('^contact$', views.contact, name = 'contact'),
-    url('^index$', views.index, name = 'index'),
+    url('^index$', views.index1, name = 'index'),
     url('^about$', views.about, name = 'about'),
     url('^demo', views.demo, name = 'demo'),
     url('^item', views.item, name = 'item'),
