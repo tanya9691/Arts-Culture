@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'app',
     'whitenoise.runserver_nostatic',
     'registration',
-    'rest_framework',
+    #'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -163,19 +163,19 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/static/'
+
 MEDIA_URL = '/media/'
 #STATIC_ROOT = os.path.join(BASE_DIR,'app/static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__)) 
+#PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
+STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
 #STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'))
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'staticfiles')]
+STATICFILES_DIRS = os.path.join(BASE_DIR,'static')
 
 
 
